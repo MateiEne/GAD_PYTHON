@@ -31,16 +31,17 @@ print(sum_to_n(4))
 
 
 def e_intreg(nr):
-    if type(nr) is int:
+    try:
+        val = int(nr)
         return True
-
-    return False
+    except ValueError:
+        return False
 
 
 def intreg():
     nr = input()
 
-    if e_intreg(int(nr)) is True:
+    if e_intreg(nr) is True:
         print(nr)
     else:
         return 0
