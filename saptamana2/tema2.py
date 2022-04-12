@@ -14,17 +14,17 @@ print(param_sum(2, 4, 'abc'))
 def sum_to_n(n: int):
     sum = 0
     odd_numbers_sum = 0
-    even_numebrs_sum = 0
+    even_numbers_sum = 0
 
     for i in range(n):
         if (i + 1) % 2 == 0:
-            even_numebrs_sum += i + 1
+            even_numbers_sum += i + 1
         else:
             odd_numbers_sum += i + 1
 
         sum += i + 1
 
-    return sum, even_numebrs_sum, odd_numbers_sum
+    return sum, even_numbers_sum, odd_numbers_sum
 
 
 print(sum_to_n(4))
